@@ -1,0 +1,63 @@
+.box {
+    width: 150px;
+    height: 150px;
+
+    animation-name: bot;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+body{
+    background-color: black;
+}
+
+
+@keyframes bot {
+    0% {
+        background-color: #ee82ee;
+        border-radius: 5px;
+        transform: rotate(0deg);
+        left: 0;
+        top: 0;
+
+    }
+
+
+    25% {
+        background-color: cyan;
+        border-radius: 10px;
+
+        transform: rotate(45deg);
+        left: 1070px;
+        top: 0;
+    }
+
+    50% {
+        background-color: rgb(255, 0, 89);
+        border-radius: 15px;
+
+        transform: rotate(90deg);
+        left: 1070px;
+        top: 400px;
+    }
+
+    75% {
+        background-color: rgb(255, 255, 0);
+        border-radius: 50px;
+
+        transform: rotate(180deg);
+        left: 40px;
+        top: 400px;
+    }
+
+    100% {
+        background-color: rgb(211, 102, 43);
+        border-radius: 0px;
+        transform: rotate(360deg);
+        left: 0;
+        top: 0;
+    }
+}
